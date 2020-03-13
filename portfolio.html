@@ -8,26 +8,41 @@
 </head>
 
 <body>
+    <!---Navigation Bar-->
     <nav class="nav_portfolio">
         <h2>YukiEngineer</h2>
         <ul>
             <li>
-                <a href="#" data-toggle="modal" data-target="#thisSiteModal">This Site</a>
+                <a href="#" class="this_site" data-toggle="modal" data-target="#thisSiteModal">This Site</a>
             </li>
             <li>
-                <a href="#">About Me</a>
+                <a href="#" class="tab about_me is_active">About Me</a>
             </li>
             <li>
-                <a href="#">Work</a>
+                <a href="#" class="tab work">Work</a>
             </li>
             <li>
-                <a href="#">Skill</a>
+                <a href="#" class="tab skill">Skill</a>
             </li>
             <li>
-                <a href="#">Contact</a>
+                <a href="#" class="tab contact">Contact</a>
             </li>
         </ul>
     </nav>
+    <div class="main_wrapper">
+        <h1 class="content about_me is_show">
+            About Me
+        </h1>
+        <h1 class="content work">
+            Work
+        </h1>
+        <h1 class="content skill">
+            Skill
+        </h1>
+        <h1 class="content contact">
+            Contact
+        </h1>
+    </div>
     <!---This site modal-->
     <div class="modal fade" id="thisSiteModal" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
@@ -48,6 +63,7 @@
     </script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="custom.js"></script>
 </body>
 
 </html>
