@@ -88,12 +88,29 @@ html {
     /* padding: 20px */
 }
 
-
-/* .work_title,
-.work_tec {
-    text-align: center;
-} */
-
 .work_wrapper img {
+    width: 100%;
+}
+
+.content.skill {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.skill_wrapper {
+    background-color: rgb(251, 229, 214);
+    height: 350px;
+    width: 300px;
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+}
+
+.skill_wrapper h3 {
+    margin-bottom: 40px;
+}
+
+.skill_wrapper table {
     width: 100%;
 }
