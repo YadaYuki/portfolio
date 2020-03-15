@@ -23,6 +23,7 @@ html {
 
 .nav_portfolio li {
     margin-top: 30px;
+    cursor: pointer;
 }
 
 .nav_portfolio a {
@@ -62,7 +63,7 @@ html {
     overflow: auto;
 }
 
-.content.about_me {
+.about_me_wrapper {
     width: 300px;
     margin: 50px auto;
     background-color: rgb(255, 230, 153);
@@ -76,7 +77,7 @@ html {
     filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.2));
 }
 
-.menu_btn {
+.nav_btn {
     display: none;
 }
 
@@ -92,7 +93,8 @@ html {
     width: 100%;
 }
 
-.content.skill {
+.content.skill,
+.content.contact {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -113,4 +115,24 @@ html {
 
 .skill_wrapper table {
     width: 100%;
+}
+
+.contact_form_wrapper {
+    width: 50%;
+    border-right: 1px solid black;
+    margin-top: 40px;
+}
+
+.contact_info_wrapper {
+    width: 50%;
+    margin-top: 40px;
+}
+
+.contact_form_wrapper {
+    text-align: center;
+    padding: 20px 15px
+}
+
+.contact_info_wrapper {
+    padding: 80px 40px;
 }

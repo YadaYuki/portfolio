@@ -6,3 +6,10 @@
 .nav_portfolio {
     display: none;
 }
+
+.nav_btn {
+    display: inline;
+    position: fixed;
+    top: 20px;
+    left: 10px;
+}
