@@ -22,4 +22,13 @@ $(function() {
         }
         return starIconsHtml;
     });
+
+    // side menu
+    $(".nav_btn").click(function() {
+        $(".main_wrapper").toggleClass("side-menu-open");
+        // close menu
+        $(".main_wrapper").click(function() {
+
+        });
+    });
 });
