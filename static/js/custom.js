@@ -13,6 +13,7 @@ $(function() {
 
     // star rating
 <<<<<<< HEAD
+<<<<<<< HEAD
     $(".star-rating").html(function() {
         let starIconsHtml = '';
         //inside an event handler
@@ -32,6 +33,8 @@ $(function() {
         });
     });
 =======
+=======
+>>>>>>> parent of 0fcf11c... implemented menu tab change and star rating
     // $(".star-rating").html(() => {
     //     let starIconsHtml = '';
     //     //inside an event handler
@@ -42,5 +45,8 @@ $(function() {
     //     }
     //     return starIconsHtml;
     // });
+<<<<<<< HEAD
+>>>>>>> parent of 0fcf11c... implemented menu tab change and star rating
+=======
 >>>>>>> parent of 0fcf11c... implemented menu tab change and star rating
 });
