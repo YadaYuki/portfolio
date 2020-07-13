@@ -1,18 +1,18 @@
 $(function() {
-    // when page loaded.
-    $(document).ready(function() {
-        $("#thisSiteModal").modal("show");
-    });
     // // tab click change content
-    $(".menu_list li").click(function() {
-        var index = $('.menu_list li').index(this);
-        // nav link active
+    $(".nav_portfolio li").on("click", () => {
         $(".is_active").removeClass("is_active");
         $(this).addClass("is_active");
-        $(".content_wrapper").removeClass("is_show").eq(index).addClass("is_show");
+        $(".is_show").removeClass("is_show");
+        var index = $('.nav_portfolio li').index(this);
+        alert(index);
+        $(".content_wrapper").eq(idx).addClass("is_show");
     });
 
+    $(".nav_btn").click(() => {});
+
     // star rating
+<<<<<<< HEAD
     $(".star-rating").html(function() {
         let starIconsHtml = '';
         //inside an event handler
@@ -31,4 +31,16 @@ $(function() {
 
         });
     });
+=======
+    // $(".star-rating").html(() => {
+    //     let starIconsHtml = '';
+    //     //inside an event handler
+    //     const starNum = $(this).attr("class").split(" ")[1];
+    //     alert(starNum);
+    //     for (let i = 0; i < starNum; i++) {
+    //         starIconsHtml += '<input type = "radio" name = "rating" value = "1"><i style="opacity:1;"></i>';
+    //     }
+    //     return starIconsHtml;
+    // });
+>>>>>>> parent of 0fcf11c... implemented menu tab change and star rating
 });

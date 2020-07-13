@@ -1,0 +1,78 @@
+<style>
+    .tab {
+        border-bottom: 3px solid #fb4343;
+    }
+    
+    .tab li {
+        color: #333;
+        float: left;
+        margin: 0 10px -1px 0;
+        padding: 10px 20px;
+        border: 1px solid #fb4343;
+        cursor: pointer;
+        list-style: none;
+        transition: .3s;
+    }
+    
+    .tab li.active {
+        color: #fff;
+        background: #fb4343;
+        cursor: auto;
+    }
+    
+    .area ul {
+        display: none;
+    }
+    
+    .area ul.show {
+        display: block;
+    }
+</style>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+</script>
+<script>
+    $(function() {
+        // ①タブをクリックしたら発動
+        $('.tab li').click(function() {
+            // ②クリックされたタブの順番を変数に格納
+            var index = $('.a').index(this);
+            alert(index);
+            // ③クリック済みタブのデザインを設定したcssのクラスを一旦削除
+            $('.tab li').removeClass('active');
+
+            // ④クリックされたタブにクリック済みデザインを適用する
+            $(this).addClass('active');
+            alert($(this).attr("class"));
+            // ⑤コンテンツを一旦非表示にし、クリックされた順番のコンテンツのみを表示
+            $('.area ul').removeClass('show').eq(index).addClass('show');
+
+        });
+    });
+</script>
+
+<!--タブメニューactiveクラスに、クリック済のデザインを設定したcssを指定-->
+<ul class="tab clearfix">
+    <li class="a active">関東</li>
+    <li class="a">関西</li>
+    <li class="a">九州</li>
+</ul>
+
+<!-- コンテンツ
+   全体を非表示にし、showクラスが付いたコンテンツのみ表示 -->
+<div class="area">
+    <ul class="show">
+        <li>東京</li>
+        <li>新宿</li>
+        <li>横浜</li>
+    </ul>
+    <ul>
+        <li>梅田</li>
+        <li>難波</li>
+        <li>三宮</li>
+    </ul>
+    <ul>
+        <li>小倉</li>
+        <li>博多</li>
+        <li>久留米</li>
+    </ul>
+</div>
